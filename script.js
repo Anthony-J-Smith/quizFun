@@ -43,7 +43,7 @@ if (startBtn.addEventListener("clicked", setInterval(function () {
 }, 1000));
 }
 
-
-
+//displays the time left in the div
+getElementById('timer').display.text.timer;
 
 
