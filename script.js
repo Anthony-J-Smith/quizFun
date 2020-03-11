@@ -6,4 +6,4 @@ var qFour = document.getElementById('qFour');
 var qFive = document.getElementById('qFive');
 
 var right = document.getElementsByClassName('right');
-var wrong - document.getElementsByClassName('wrong');
+var wrong = document.getElementsByClassName('wrong');
