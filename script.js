@@ -16,12 +16,20 @@ var score = 0;
 //qOne.style.display = "block";
 
 //if a right answer is clicked then add one to the local file otherwise it does nothing
-if {right.addEventListener('click', function() {
+if right.addEventListener('click', function() {
     score++;
  localStorage.setItem('score', score);
-});
+ alert("Correct! You sure know your stuff!")
+}){
 } else {
-    return
+    alert("wrong answer!");
+    
 }
+
+
+
+
+
+
 
 
