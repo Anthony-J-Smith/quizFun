@@ -11,6 +11,7 @@ var right = document.getElementsByClassName('right');
 var wrong = document.getElementsByClassName('wrong');
 var btn = document.getElementsByClassName('btn');
 var score = 0;
+var timer = duration, minutes, seconds;
 
 //starts with all questions hidden
 //qOne.style.display = "block";
@@ -26,8 +27,21 @@ if right.addEventListener('click', function() {
     
 }
 
+//countdown to quiz over (starts when start is pressed)
+if (startBtn.addEventListener("clicked", setInterval(function () {
+    minutes = parseInt(timer / 60, 10);
+    seconds = parseInt(timer % 60, 10);
 
+    minutes = minutes < 10 ? "4" + minutes : minutes;
+    seconds = seconds < 10 ? "0" + seconds : seconds;
 
+    display.text(minutes + ":" + seconds);
+
+    if (--timer < 0) {
+        timer = duration;
+    }
+}, 1000));
+}
 
 
 
